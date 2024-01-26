@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <link href="feature.css" rel="stylesheet" type="text/css" />
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="WD1.jpg" style="width: 100%" />
+      <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="N2.jpg" style="width: 100%" />
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="N3.png" style="width: 100%" />
+      <div class="text">Caption Three</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br />
+
+  <!-- The dots/circles -->
+  <div style="text-align: center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <div style="padding: auto; margin: 0">
+    <p>
+      Windows 12 operating system. Microsoft's latest operating system at that
+      time was Windows 11. If there have been updates or releases beyond that
+      point, I would not have information on them.
+    </p>
+    If you are referring to Windows 11 or another version of Windows, the
+    installation process generally involves the following steps.<br />
+    Please note that the specifics might vary based on the version and any
+    updates that have occurred since my last knowledge update.
+
+    <h4>Windows Installation Process (Generic Overview):</h4>
+    <h5>System Requirements Check:</h5>
+
+    <p>
+      Ensure that your computer meets the minimum system requirements for the
+      Windows version you are installing.
+    </p>
+    <h5>Backup Data:</h5>
+
+    <p>
+      Back up important data from your computer to prevent data loss during the
+      installation process.
+    </p>
+    <h5>Create Installation Media:</h5>
+    <p>
+      Download the Windows installation tool from the official Microsoft
+      website. <br />Use the tool to create a bootable USB drive or burn the
+      installation files to a DVD
+    </p>
+
+    <h5>Insert Installation Media:</h5>
+    <p>
+      Insert the USB drive or DVD containing the Windows installation files into
+      your computer.
+    </p>
+
+    <h5>Boot from Installation Media:</h5>
+    <p>
+      Restart your computer and boot from the installation media. You might need
+      to change the boot order in the BIOS/UEFI settings.
+    </p>
+
+    <h5>Windows Setup:</h5>
+    <p>Follow the on-screen instructions to start the Windows setup process.</p>
+
+    <h5>Enter Product Key:</h5>
+    <p>
+      Enter the product key when prompted. This is usually a 25-character
+      alphanumeric code that came with your Windows purchase.
+    </p>
+
+    <h5>Select Installation Type:</h5>
+    <p>
+      Choose between an upgrade or a clean installation. A clean installation
+      involves formatting the drive, so make sure to back up your data.
+    </p>
+
+    <h5>Partitioning:</h5>
+    <p>
+      Create or select the partition where Windows will be installed. You might
+      need to format the selected partition.
+    </p>
+
+    <h5>Install Windows:</h5>
+    <p>
+      Begin the installation process and wait for the files to be copied and
+      installed on your system.
+    </p>
+
+    <h5>Set Up User Account:</h5>
+
+    Create a user account and set a password. You may also be prompted to set up
+    security features like Windows Hello.
+    <h5>Region and Language Settings:</h5>
+
+    Choose your region, language, and other preferences.
+    <h5>Connect to Network:</h5>
+
+    Connect to a Wi-Fi network or use an Ethernet cable to connect to the
+    internet.
+    <h5>Windows Updates:</h5>
+
+    Allow Windows to check for and install updates.
+    <h5>Customize Settings:</h5>
+
+    Customize privacy and other settings according to your preferences.
+    <h5>Sign In with Microsoft Account:</h5>
+
+    Sign in with a Microsoft account for added features and services.
+    <h5>Finish Setup:</h5>
+
+    Complete the setup process and wait for Windows to finalize the
+    installation.
+    <h5>Install Drivers and Software:</h5>
+
+    Install drivers for your hardware components and any additional software you
+    need.
+    <h5>Summary:</h5>
+    <p>
+      Follow the on-screen instructions, enter necessary information, and make
+      choices based on your preferences throughout <br />the installation
+      process. After completing these steps, you should have a functional
+      Windows operating system on your computer. <br />Keep in mind that the
+      steps might vary slightly based on the specific version of Windows you are
+      installing. Always refer to the official<br />
+      Microsoft documentation for the most accurate and up-to-date information.
+    </p>
+  </div>
+</html>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides((slideIndex += n));
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides((slideIndex = n));
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
+</script>

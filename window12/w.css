@@ -1,0 +1,84 @@
+* {
+  font-family: Tahoma, Geneva, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.main {
+  height: auto;
+  width: 1300px;
+  margin: 0 auto;
+}
+.wrapper {
+  height: auto;
+  width: 1300px;
+  float: left;
+  box-shadow: 0 0 20px #000000;
+}
+.banner {
+  height: 200px;
+  width: 1300px;
+  float: left;
+  background: url(p3.jpg);
+  background-size: 100% 100%;
+  font-size: 72px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 10px #000000;
+}
+.menu {
+  height: 60px;
+  width: 1300px;
+  float: left;
+  background: #09f;
+  line-height: 60px;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+}
+ul li a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 15px;
+  display: block;
+}
+ul li a :hover {
+  background: #0c72ef;
+  color: #000;
+}
+.middle {
+  height: auto;
+  width: 1280px;
+  padding: 10px;
+  float: left;
+}
+.cont {
+  height: 500px;
+  float: left;
+  width: 800px;
+  overflow: auto;
+}
+.ad {
+  height: 500px;
+  float: right;
+  width: 450px;
+}
+.img {
+  height: 500px;
+  width: 450px;
+  border-radius: 30px;
+}
+.fotter {
+  height: 150px;
+  float: left;
+  width: 1300px;
+  background: #0c72ef;
+  font-size: 24px;
+  line-height: 150px;
+  text-align: center;
+  color: #fff;
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <link href="feature.css" rel="stylesheet" type="text/css" />
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="s1.png" style="width: 100%" />
+      <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="s4.webp" style="width: 100%" />
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="s3.jpg" style="width: 100%" />
+      <div class="text">Caption Three</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br />
+
+  <!-- The dots/circles -->
+  <div style="text-align: center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</html>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides((slideIndex += n));
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides((slideIndex = n));
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
+</script>
+<h4>Will Windows 12 be a free upgrade?</h4>
+<p>
+  One of the big questions you're likely to have is whether you'll have to pay
+  to upgrade to Windows 12 when (and if) it releases, but thankfully, that's
+  unlikely. Microsoft has been set on offering major Windows updates for free to
+  existing Windows users for a few years now, and it only makes sense for that
+  to continue. Of course,<br />
+  Windows 12 itself likely won't be free, so if you don't have a Windows license
+  at all, you're still going to have to buy it.
+</p>
+
+<p>
+  It's been suggested by some reports that Microsoft might introduce a
+  subscription service for Windows 12, but that's not going to happen.<br />
+  You won't have to pay a recurring fee to use Windows 12. Of course, you'll
+  still need to buy a license if you're building a custom PC and don't have a
+  valid Windows 10 or 11 license right now, just as with previous releases.
+</p>
+
+<p>
+  What might get you to spend money is whether your PC is compatible with it,
+  but that's a different matter worthy of its own section.
+</p>
+
+<h4>Will I be forced to upgrade?</h4>
+The most likely answer to this is no. Microsoft has significantly eased up on
+its push to get users to install new versions of Windows by force. Windows 11 is
+still an optional update for Windows 10 users, and most likely, that approach
+will continue with future releases. Updating to new versions of Windows can be
+mandatory if your version of Windows is nearing the end of its support period.
+For example, the original release of Windows 11 will be supported for 24 months
+if you have a Home or Pro edition of Windows, so by now, you need to have
+updated to a newer version, since those two years have passed.
+
+<h4>Windows 11 updates</h4>
+However, if you look at what's happening with Windows 10, Microsoft is still
+delivering security updates for that operating system, and you don't have to
+upgrade to Windows 11. Windows 10 as a whole is supported until October 2025,
+and instead of pushing users to Windows 11, Microsoft is keeping them on Windows
+10 unless they want to upgrade. It's likely that Windows 11 will receive the
+same treatment once Windows 12 is released, so you won't be forced to upgrade.
+
+<h4>Can my PC run Windows 12?</h4>
+After Windows 11 significantly raised the minimum system requirements compared
+to Windows 10, this is another great question to ponder. Will Windows 12 leave
+older PCs behind once again? It's too early to say, but there's certainly a
+chance that some PCs won't be compatible for one reason or another. Windows 11
+currently requires processors released from around 2018 onward, and while we
+currently don't see a reason for the next Windows release to require more than
+that, it's possible that will happen. <br />As for any other requirements,
+again, it's hard to say. Windows 11 requires 4GB of RAM and 64GB of internal
+storage, so at the very least, Windows 12 will need just as much. You also
+shouldn't expect Microsoft to walk back on things like TPM requirements.
+However, if history is any indication, <br />there will likely continue to be
+some kind of workaround that unsupported PCs can use to install it if you're
+feeling adventurous. Either way, almost all the best laptops you can buy today
+will likely support Windows 12 when it is released.
+
+<h4>What's new in Windows 12?</h4>
+It's still too early to know for sure what Windows 12 will encompass. However,
+some reports and leaks have given us a look at what might be part of this major
+update.
+
+<h4>More AI capabilities</h4>
+AI has been a core focus of Windows for the past year or so, and if recent
+reports are to be believed, that will only be more true with Windows 12. The
+next version of Windows will weave AI into every part of the experience, rather
+than just having a Copilot sidebar. Reports suggest Windows 12 will be able to
+do things like interpret natural language search queries to find your documents
+and files. For example, you might write "show me the documents I was working on
+last week", and it will surface those documents. This is thanks to an "advanced
+copilot", which will also remember everything you;ve looked at on your PC and
+create a timeline of sorts, which you can jump back into at any time. This si
+similar to a feature that was present on Windows 10. Additionally, these AI
+features will include the ability to not only caption video in real time (which
+Windows 11 already does) but also translate the captions on the fly. Other AI
+features include a "Super Resolution" capability to upscale the quality of
+videos and games you play on your PC. Additionally, AI will be used to generate
+a parallax effect for your photos when you use them as a desktop background.
+
+<h4>A new desktop UI</h4>
+Microsoft inadvertently showed off a concept for Windows 12 during the Microsoft
+Ignite keynote hosted by CEO Satya Nadella. The concept shows a few interesting
+changes, including a floating taskbar and some system icons that are now
+displayed at the top of the screen, such as the Wi-Fi and battery indicators,
+along with a weather widget. This would make Windows more similar to macOS or
+some Linux distributions. Screenshot of a Windows desktop with a redesigned
+toolbar and system icons at the top of the screen Other changes that have been
+reported include a new lock screen and login UI that's more optimized for touch
+devices, and a new notification center that can group notifications by contact,
+and not just by app. It's also expected you might be able to pin widgets to the
+desktop rather than having to use the dedicated widgets panel. Recently, it's
+also been reported that the Start menu will see some changes, with a new Creator
+area housing links to Microsoft 365 apps like Designer, Clipchamp, and
+PowerPoint.
+
+<h4>New energy efficiency features</h4>
+Another big focus for Windows 12 seems to be energy efficiency and
+sustainability, with a couple of new features in tow to address just that.
+According to recent reports, Windows 12 will feature some energy saver
+improvements that can extend battery life by up to 50%. Another noteworthy
+capability is being able to set your laptop to prefer charging when the power
+grid in your area is using renewable energy, reducing carbon emissions as a
+result.
+
+<h4>more modular approach</h4>
+
+According to reports, Microsoft is working on a modular version of Windows
+that's tailored and adapted to different form factors and devices. For example,
+a lower-end tablet or foldable PC may not support classic Win32 apps in order to
+have a lighter build. However, that feature would still be available on
+traditional desktop PC, so long-time users can still use their PC just as they
+always have. On top of that, <br />this modular approach also enables more
+seamless updates and more security, because certain parts of the OS are blocked
+off from user access, and thus can't be corrupted easily. This is somewhat
+reminiscent of what Microsoft was<br />
+attempting with Windows 10X, which was going to be a version of Windows 10
+designed for more modern devices and foldables. But while Windows 10X stripped
+out everything <br />it could and was built from the ground up for these
+devices, the goal with Windows 12 is to have the full set of features and then
+remove the bits that don't make sense for a particular device or form factor.
+<br />This will result in lighter Windows installations, allowing the OS to run
+on even lower-end hardware to compete with ChromeOS. However, it's important to
+note that this modular version of <br />Windows won't come with a <br />Windows
+12 update. Devices will have to ship with this release, and it likely won't be
+ready when Windows 12 is initially launched. In fact, it's currently not known
+when it will be ready.
+
+<h4>No more support for 32-bit Arm apps and better Arm optimization</h4>
+<p>
+  While it's not a new feature, it was recently confirmed that the next version
+  of Windows will not support 32-bit Arm apps, following in the footsteps of
+  other Arm-centric platforms. Officially, Microsoft says this change is
+  happening with a future version of Windows 11,<br />
+  but we'll have to wait and see when it ends up happening. <br />Microsoft has
+  also mentioned it's working on improvements for Arm devices, including more
+  efficient emulation of x86 apps. This was mentioned briefly during the
+  Qualcomm <br />Snapdragon Summit keynote, but it's unclear what these
+  improvements are or when they will arrive.
+</p>
+
+<h4>What we want to see in Windows 12</h4>
+<p>
+  Of course, with a major Windows release on the way, we can't help but imagine
+  all the changes it should make to improve the Windows experience. While we
+  love Windows 11, there's definitely a lot that Microsoft can do to improve the
+  OS, including taking some lessons from its rivals.
+</p>
+
+<h4>Seamless updates</h4>
+<p>
+  Screenshot of Windows Update in the Windows 11 Settings app with updates
+  paused One of the big changes Microsoft announced for Windows 11 was for
+  smaller updates to install in the background <br />to make the overall process
+  less of a pain. While these changes are welcome, the process isn't quite as
+  seamless as it could be. You have to download and <br />install updates, and
+  then you have to reboot, which is when the computer makes a lot of the changes
+  in the update.<br />
+  Microsoft could stand to learn from ChromeOS and Android, which offer seamless
+  updates where most of the changes are<br />
+  done in the background. While you still need to reboot the device, it's pretty
+  much a standard reboot where your PC boots back up with the new update
+  installed.<br />
+  Windows 11 still forces you to wait a while when it reboots to install
+  updates, and while that's somewhat acceptable for big feature updates, it
+  <br />shouldn't happen with the cumulative updates we get each month. That
+  seems to be getting better with the new modular<br />
+  version of Windows, though it would be great if it also applied to existing
+  PCs.
+</p>
+
+<h4>Improvements to widgets</h4>
+<p>
+  Screenshot of a Windows 7 desktop with gadgets placed around the screen
+  Desktop Gadgets in Windows 7 | Source: Redmond Pie The Widgets board on
+  Windows 11 is full of potential, but so far, Microsoft hasn't really
+  delivered. For over a year, only web-based widgets provided by Microsoft were
+  supported, <br />and the Widgets board is also flooded with "news" articles
+  powered by Microsoft Start, <br />which are rarely useful or entertaining. You
+  can't disable them either. To that end, we have two wishes for widgets on
+  Windows 11. First, we'd like more<br />
+  customization options for the Widgets board. Users should be able to disable
+  the news feed entirely and use the board exclusively for widgets so that it
+  can be <br />
+  truly useful to them and not filled with visual clutter. Additionally, for
+  users who do want to see news, the Widgets board could serve as an RSS feed
+  reader. Microsoft recently built a similar feature <br />directly into
+  Microsoft Edge, and having this capability built directly into Windows would
+  make it <br />that much easier for users to get access to news and articles
+  from sources they curate. The other request is to bring widgets directly to
+  the Windows desktop, which is essentially <br />how widgets work on Android.
+  If you have widgets, there's a good chance you want quick access to the
+  <br />information they present, and having them directly on the desktop would
+  greatly help with that. Windows Vista and 7 already had this capability, and
+  while it's not for everyone,<br />
+  it could definitely be helpful. This is also something Apple recently
+  announced with macOS Sonoma, so it's about time Microsoft does it too.
+</p>
