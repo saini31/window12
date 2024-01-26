@@ -1,4 +1,5 @@
 # window12
+WINDOW12 BLOG | FEATURES | INSTALLATION PROCESS
 ![image](https://github.com/saini31/window12/assets/90542901/2fa1028a-ea0e-461d-befc-14e69234302e)
 ![image](https://github.com/saini31/window12/assets/90542901/d4fc0ab6-b9fa-4bb3-b895-72a339822983)
 ![image](https://github.com/saini31/window12/assets/90542901/3d098eba-6eec-4f53-8e1a-0efb32413f98)
